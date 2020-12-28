@@ -1,0 +1,9 @@
+* {
+  none: #00000000;
+  bg: #1F1F1FE0;
+  fg: #FFFFFFFF;
+  bg-input: #FFFFFFFF;
+  fg-input: #000000FF;
+  fg-placeholder: #A9ABB0FF;
+  fg-selected: #FFFFFFFF;
+}
