@@ -6,12 +6,12 @@ set $mod Mod4
 font pango:Noto Sans Mono 12
 
 # Autostart
-# exec --no-startup-id nm-applet                   # NetworkManager
+# exec --no-startup-id nm-applet                 # NetworkManager
 exec --no-startup-id blueman-applet              # Bluetooth
 exec --no-startup-id fcitx5                      # fcitx5
-exec --no-startup-id picom --backend glx --vsync # Picom
+exec --no-startup-id picom                       # Picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh     # Polybar
-exec_always --no-startup-id feh --bg-fill ~/图片/Sheffield.jpg # Wallpaper
+exec_always --no-startup-id feh --bg-fill $HOME/.config/share/Sheffield.jpg # Wallpaper
 
 # Xfce4 Utils
 # exec --no-startup-id xfce4-clipman
