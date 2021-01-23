@@ -33,8 +33,8 @@ focus_follows_mouse no
 workspace_auto_back_and_forth yes
 
 # Rofi
-bindsym $mod+d exec rofi -no-lazy-grab -show drun -show-icons -width 30 -lines 10
-bindsym $mod+space exec rofi -no-lazy-grab -show drun -show-icons -width 30 -lines 10
+# bindsym $mod+d exec --no-startup-id $HOME/.config/share/rofi-scripts/launcher.sh
+bindsym $mod+space exec --no-startup-id $HOME/.config/share/rofi-scripts/launcher.sh
 
 # Media keys
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10

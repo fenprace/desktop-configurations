@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 MENU=`echo '  Lock | 鈴 Suspend |  Logout |  Reboot |  Shutdown |' | \
 rofi -dpi 144 -no-lazy-grab -sep '|' -dmenu -i -p '' \
