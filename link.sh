@@ -1,10 +1,7 @@
 #! /bin/sh
 
-ln -vs ${PWD}/i3 ~/.config/i3
-ln -vs ${PWD}/networkmanager-dmenu ~/.config/networkmanager-dmenu
-ln -vs ${PWD}/polybar ~/.config/polybar
-ln -vs ${PWD}/rofi ~/.config/rofi
-ln -vs ${PWD}/share ~/.config/share
-
-ln -fnsv ${PWD}/vim/.vimrc ${HOME}/.vimrc
-ln -fnsv ${PWD}/vim/.vimrc ${HOME}/.config/nvim/init.vim
+ln -fnsv ${PWD}/i3 ~/.config/i3
+ln -fnsv ${PWD}/networkmanager-dmenu ~/.config/networkmanager-dmenu
+ln -fnsv ${PWD}/polybar ~/.config/polybar
+ln -fnsv ${PWD}/rofi ~/.config/rofi
+ln -fnsv ${PWD}/share ~/.config/share
