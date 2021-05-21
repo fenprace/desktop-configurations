@@ -15,7 +15,7 @@ configuration {
 }
 
 @import "colors/dark.rasi"
-@import "colors/schemes/blue.rasi"
+@import "colors/schemes/amber.rasi"
 
 window {
   transparency: "real";

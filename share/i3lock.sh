@@ -8,7 +8,7 @@ K='#FFFFFF80'  # key holding
 V='#FFFFFFFF'  # verifying
 
 i3lock \
- -i ~/图片/Sheffield_Lock.jpg \
+ -i ~/.config/share/Wallpaper.png \
 --insidecolor=$B --insidevercolor=$B --insidewrongcolor=$B \
 --ringcolor=$D   --ringvercolor=$V   --ringwrongcolor=$W \
 --line-uses-inside --separatorcolor=$D \

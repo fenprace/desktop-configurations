@@ -7,11 +7,12 @@ font pango:Noto Sans Mono 12
 
 # Autostart
 # exec --no-startup-id nm-applet                 # NetworkManager
-# exec --no-startup-id blueman-applet            # Bluetooth
+exec --no-startup-id blueman-applet              # Bluetooth
+# exec --no-startup-id cmst -m -w                # ConnMan Applet 
 exec --no-startup-id fcitx5                      # fcitx5
 exec --no-startup-id picom                       # Picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh # Polybar
-exec_always --no-startup-id feh --bg-fill $HOME/.config/share/Sheffield.jpg # Wallpaper
+exec_always --no-startup-id feh --bg-fill $HOME/.config/share/Wallpaper.png # Wallpaper
 
 # Remap Keys
 exec_always --no-startup-id $HOME/.config/share/remapCapsLock.sh
