@@ -1,34 +1,33 @@
-
 configuration {
   // modi: [window, run, ssh, drun];
-  modi: [drun];
+  modi: [drun, window];
   font: "Iosevka Nerd Font 12";
-  dpi: 144;
+  dpi: 120;
   show-icons: false;
   icon-theme: "Papirus";
   display-drun: "";
   drun-display-format: "{name}";
   disable-history: false;
-  fullscreen: false;
-  hide-scrollbar: true;
   sidebar-mode: false;
 }
 
-@import "colors/dark.rasi"
-@import "colors/schemes/amber.rasi"
+@theme "colors/dark.rasi"
+@import "colors/schemes/cyan.rasi"
 
 window {
   transparency: "real";
   background-color: @bg;
   text-color: @fg;
   location: 0;
+  fullscreen: false;
+  hide-scrollbar: true;
 }
 
 prompt {
   enabled: true;
   padding: 0px;
   background-color: @none;
-  text-color: @theme;
+  text-color: @main;
 }
 
 entry {
@@ -74,11 +73,14 @@ element {
 }
 
 element-icon {
-  size: 24px;
+  size: 36px;
   border: 0px;
+  background-color: @none;
 }
 
 element-text {
+  background-color: @none;
+  text-color: @fg;
   expand: true;
   horizontal-align: 0;
   vertical-align: 0.5;
@@ -86,11 +88,11 @@ element-text {
 }
 
 element selected {
-  background-color: @theme;
+  background-color: @main;
   text-color: @fg-selected;
   border: 0px 0px 0px 2px;
   border-radius: 0px;
-  border-color: @theme;
+  border-color: @main;
 }
 
 // Wastes

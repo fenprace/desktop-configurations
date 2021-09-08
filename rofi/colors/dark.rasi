@@ -1,5 +1,5 @@
 * {
-  none: #00000000;
+  none: rgba(0, 0, 0, 0);
   bg: #1F1F1FE0;
   fg: #FFFFFFFF;
   bg-input: #FFFFFFFF;

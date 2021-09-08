@@ -3,39 +3,47 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-font pango:Noto Sans Mono 12
+font pango:Noto Sans Mono CJK SC 10
 
 # Autostart
-# exec --no-startup-id nm-applet                 # NetworkManager
-exec --no-startup-id blueman-applet              # Bluetooth
-# exec --no-startup-id cmst -m -w                # ConnMan Applet 
-exec --no-startup-id fcitx5                      # fcitx5
-exec --no-startup-id picom                       # Picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh # Polybar
-exec_always --no-startup-id feh --bg-fill $HOME/.config/share/Wallpaper.png # Wallpaper
-
-# Remap Keys
-exec_always --no-startup-id $HOME/.config/share/remapCapsLock.sh
-
-# Xfce4 Utils
-# exec --no-startup-id xfce4-clipman
-# exec --no-startup-id xfce4-power-manager
 
 # Appearance
 gaps inner 5
-hide_edge_borders smart
+# hide_edge_borders smart
 default_border none
-default_floating_border normal
+default_floating_border pixel 2
 title_align center
+
 # for_window [class=".*"] title_format " %title"
+# for_window [class=".*"] title_format " <span size='large'>❐</span>"
+for_window [class=".*"] title_format " "
+
+# Theme
+# class                 border    bground   text    indicator child_border
+client.focused          #1F1F1FE0 #006064FF #FFFFFF #1F1F1FE0 #1F1F1FE0
+client.focused_inactive #1F1F1FE0 #A9ABB0FF #1F1F1F #1F1F1FE0 #1F1F1FE0
+client.unfocused        #1F1F1FE0 #1F1F1FE0 #A9ABB0 #1F1F1FE0 #1F1F1FE0
+client.urgent           #FFFFFF   #FFFFFF   #006064 #1F1F1FE0 #1F1F1FE0
+client.placeholder      #1F1F1FE0 #1F1F1FE0 #A9ABB0 #1F1F1FE0 #1F1F1FE0
+
+# client.background     #FFFFFF
 
 # Behaviors
+# workspace_layout tabbed
 focus_follows_mouse no
 workspace_auto_back_and_forth yes
 
 # Rofi
 # bindsym $mod+d exec --no-startup-id $HOME/.config/share/rofi-scripts/launcher.sh
 bindsym $mod+space exec --no-startup-id $HOME/.config/share/rofi-scripts/launcher.sh
+bindsym $mod+Tab exec --no-startup-id $HOME/.config/share/rofi-scripts/window.sh
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Flameshot
+bindsym $mod+d exec --no-startup-id flameshot gui
 
 # Media keys
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
@@ -48,9 +56,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -62,8 +67,8 @@ bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 # bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
 # bindsym $mod+Right focus right
 
 # move focused window
@@ -73,10 +78,10 @@ bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# bindsym $mod+Shift+Left move left
+# bindsym $mod+Shift+Down move down
+# bindsym $mod+Shift+Up move up
+# bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -117,16 +122,16 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-workspace $ws1 output eDP
-workspace $ws2 output eDP
-workspace $ws3 output eDP
-workspace $ws4 output eDP
-workspace $ws5 output eDP
-workspace $ws6 output HDMI-A-0 eDP
-workspace $ws7 output HDMI-A-0 eDP
-workspace $ws8 output HDMI-A-0 eDP
-workspace $ws9 output HDMI-A-0 eDP
-workspace $ws10 output HDMI-A-0 eDP
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws4 output primary
+workspace $ws5 output primary
+workspace $ws6 output HDMI-A-0 eDP primary
+workspace $ws7 output HDMI-A-0 eDP primary
+workspace $ws8 output HDMI-A-0 eDP primary
+workspace $ws9 output HDMI-A-0 eDP primary
+workspace $ws10 output HDMI-A-0 eDP primary
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1

@@ -1,3 +1,3 @@
 #! /bin/sh
 
-rofi -dpi 144 -no-lazy-grab -show drun -fullscreen -show-icons -columns 4
+rofi -no-lazy-grab -show drun -show-icons -theme-str "window { fullscreen: true; } listview { columns: 4; }"
