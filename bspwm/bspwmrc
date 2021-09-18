@@ -10,10 +10,19 @@ bspc config split_ratio 0.5
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
+killall -q picom
+killall -q sxhkd
+killall -q dunst
+killall -q polybar
+killall -q fcitx5
+
+sleep 1
+
 ~/.fehbg
-pgrep -x picom || picom -b --experimental-backends
-pgrep -x sxhkd || sxhkd &
-pgrep -x dunst || dunst &
-polybar main -c ~/.config/polybar/config.ini &
-polybar second -c ~/.config/polybar/config.ini &
+picom -b --experimental-backends
+sxhkd &
+dunst &
+polybar main &
+polybar second &
 fcitx5 &
+

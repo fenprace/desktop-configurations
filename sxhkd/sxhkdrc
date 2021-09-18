@@ -38,8 +38,8 @@ super + Return
 super + @space
 	~/.config/share/scripts/launcher.sh
 
-super + @tab
-  ~/.config/share/scripts/window.sh
+super + @Tab
+	~/.config/share/scripts/window.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -102,8 +102,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+# super + {grave,Tab}
+# 	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}
