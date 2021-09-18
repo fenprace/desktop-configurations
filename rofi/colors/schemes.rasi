@@ -1,0 +1,21 @@
+* {
+    amber1: #FF8F00;
+    blue1: #0D47A1;
+    bluegrey1: #263238;
+    brown1: #3E2723;
+    cyan1: #006064;
+    deeporange1: #BF360C;
+    deeppurple1: #311B92;
+    green1: #1B5E20;
+    grey1: #212121;
+    indigo1: #1A237E;
+    lightblue1: #01579B;
+    lightGreen1: #33691E;
+    lime1: #827717;
+    orange1: #E65100;
+    pink1: #880E4F;
+    purple1: #4A148C;
+    red1: #B71C1C;
+    teal1: #004D40;
+    yellow1: #F57F17;
+}

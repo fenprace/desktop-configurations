@@ -12,7 +12,11 @@ configuration {
 }
 
 @theme "colors/dark.rasi"
-@import "colors/schemes/cyan.rasi"
+@import "colors/schemes.rasi"
+
+* {
+  main: @cyan1;
+}
 
 window {
   transparency: "real";
