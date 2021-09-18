@@ -23,3 +23,16 @@ cd desktop-configurations
 i3-msg restart
 polybar-msg cmd restart
 ```
+
+## Colors
+
+```
+dark   = #1F1F1F, E0
+dark fg = #FFFFFF
+light  = #FFFFFF, C0
+light fg = #454545
+amber  = #FF8F00
+blue   = #2196F3
+cyan   = #006064
+indigo = #3F51B5
+```

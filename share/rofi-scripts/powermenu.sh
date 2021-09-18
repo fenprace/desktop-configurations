@@ -7,7 +7,8 @@ rofi -no-lazy-grab -sep '|' -dmenu -i -p '' \
 )
 case "$MENU" in
   *Lock*) sh ~/.config/share/i3lock.sh ;;
-  *Exit*) i3-msg exit;;
+  # *Exit*) i3-msg exit;;
+  *Exit*) bspc quit;;
   *Suspend*) systemctl suspend;;
   *Hibernate*) systemctl hibernate;;
   *Reboot*) systemctl reboot ;;
