@@ -25,5 +25,5 @@ dunst &
 polybar main &
 polybar second &
 fcitx5 &
-pgrep -x redshift || redshift &
+# pgrep -x redshift || redshift &
 

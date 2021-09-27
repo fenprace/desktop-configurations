@@ -1,7 +1,7 @@
 # Inspired By Aditya Shakya @adi1090x
 
 include-file = ~/.config/polybar/colors/schemes.ini
-include-file = ~/.config/polybar/colors/dark.ini
+include-file = ~/.config/polybar/colors/light.ini
 include-file = ~/.config/polybar/colors/material.ini
 
 include-file = ~/.config/polybar/modules/battery.ini

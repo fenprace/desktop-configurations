@@ -11,7 +11,7 @@ configuration {
   sidebar-mode: false;
 }
 
-@theme "colors/dark.rasi"
+@theme "colors/light.rasi"
 @import "colors/schemes.rasi"
 
 * {
@@ -93,10 +93,13 @@ element-text {
 
 element selected {
   background-color: @main;
-  text-color: @fg-selected;
   border: 0px 0px 0px 2px;
   border-radius: 0px;
   border-color: @main;
+}
+
+element-text selected {
+  text-color: @fg-selected;
 }
 
 // Wastes
