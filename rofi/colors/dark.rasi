@@ -1,6 +1,6 @@
 * {
   none: rgba(0, 0, 0, 0);
-  bg: #1F1F1FE0;
+  bg: #1F1F1FA0;
   fg: #FFFFFFFF;
   bg-input: #FFFFFFFF;
   fg-input: #000000FF;

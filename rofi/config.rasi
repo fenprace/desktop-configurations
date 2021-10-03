@@ -11,11 +11,11 @@ configuration {
   sidebar-mode: false;
 }
 
-@theme "colors/light.rasi"
+@theme "colors/dark.rasi"
 @import "colors/schemes.rasi"
 
 * {
-  main: @cyan1;
+  main: @lightblue1;
 }
 
 window {

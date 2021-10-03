@@ -1,6 +1,6 @@
 * {
   none: #00000000;
-  bg: #FFFFFFC0;
+  bg: #FFFFFFA0;
   fg: #454545FF;
   bg-input: #FFFFFF08;
   fg-input: #000000FF;
