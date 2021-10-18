@@ -45,7 +45,7 @@ tray-offset-y = 0
 tray-padding = 0
 
 modules-left = menu-start R-12 workspaces R-2B terminal vscode firefox R-BB window-title
-modules-right = window-close L-7B backlight L-67 network L-56 volume L-45 battery L-34 date-time L-23 menu-power L-12
+modules-right = L-BB window-close window-monocle L-7B backlight L-67 network L-56 volume L-45 battery L-34 date-time L-23 menu-power L-12
 
 [bar/second]
 monitor = HDMI-A-0
@@ -70,4 +70,4 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 modules-left = menu-start R-12 workspaces R-2B terminal vscode firefox R-BB window-title
-modules-right = window-close L-6B network L-56 volume L-45 battery L-34 date-time L-23 menu-power
+modules-right = L-BB window-close window-monocle L-6B network L-56 volume L-45 battery L-34 date-time L-23 menu-power
